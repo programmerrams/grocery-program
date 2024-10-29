@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prices page</title>
+    <link rel="stylesheet" href="../css/updatePrices.css" />
+  </head>
+  <body>
+    <section class="navigation-section">
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="../html/index.html" class="link-state">
+              <span> home </span></a
+            >
+          </li>
+          <li>
+            <a href="../html/cashier.html" class="link-state"> Cashier page</a>
+          </li>
+
+          <li class="last-button">
+            <a href="../html/setting.html" class="link-state"> settings </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <article class="all-tables">
+      <section class="produce-section">
+        <h1>Produce Department</h1>
+        <table class="produce-table">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Price Update</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">apples</th>
+              <td class = "Prices">$2.99</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">banana</th>
+              <td class = "Prices">$0.50</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">dragon fruit</th>
+              <td class = "Prices">$5.99</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">blueberries</th>
+              <td class = "Prices">$4.99</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">mango</th>
+              <td class = "Prices">$4.99</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="Meat-section">
+        <h1>Meat Department</h1>
+        <table class="Meat-table">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Price Update</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">pork belly</th>
+              <td class = "Prices">$5.99 </td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">skirt steak</th>
+              <td class = "Prices">$7.99</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">
+                pork chops
+              </th>
+              <td class = "Prices">$6.99</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">chicken suasage</th>
+              <td class = "Prices">$2.99</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">beef sauasge</th>
+              <td class = "Prices">$1.99</td>
+              <td> <input type="text" placeholder="$0.00"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="seafood-section">
+        <table class="seafood-table">
+          <h1>seafood department</h1>
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Price Update</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">altantic salmon</th>
+              <td class = "Prices">$5.99</td>
+              <td> <input type="text"placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">red snapper</th>
+              <td class = "Prices">$10.99</td>
+              <td> <input type="text"placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">crab legs</th>
+              <td class = "Prices">$8.99</td>
+              <td> <input type="text"placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">pink shrimp</th>
+              <td class = "Prices">$4.99</td>
+              <td><input type="text"placeholder="$0.00"></td>
+            </tr>
+            <tr>
+              <th scope="row">lobster</th>
+              <td class = "Prices">$15.99</td>
+              <td> <input type="text"placeholder="$0.00"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+
+    <form class="option">
+      <div class = "produce">
+        <input type="radio" name="selection" value = "produce" />
+        <label> produce</label>
+      </div>
+      <div class = "meat">
+        <input type="radio" name="selection" value = meat />
+        <label> Meat</label>
+      </div>
+      <div class = "seafood-selected">
+        <input type="radio" name="selection" value = "seafood" />
+        <label> seafood</label>
+      </div>
+    </form>
+    <section class="btn-section">
+      <button class="change-btn">change price</button>
+      <button class="save-btn">save changes</button>
+    </section>
+  </body>
+  <script src="../javascript/updatePrices.js"></script>
+</html>

@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:rgb(234, 20, 234);
+}
+
+.all-tables {
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  align-items: center;
+  gap: 3rem;
+  justify-items: center;
+}
+
+
+table {
+  border: 4px solid black;
+}
+
+
+/**************************************************************
+navigation section
+***************************************************************/
+
+a {
+  padding:20px;
+}
+
+.navigation-section {
+  margin: 1rem 2rem;
+}
+ 
+
+.nav-list {
+  list-style:none;
+  display: flex;
+}
+
+.link-state {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.last-button{ 
+  margin-left: auto;
+}
+/**************************************************************
+select section
+***************************************************************/
+label {
+  font-size: 1.5rem;
+}
+
+
+
+/**************************************************************
+button section
+***************************************************************/
+
+.btn-section {
+  margin: 3rem;
+  display: flex;
+}
+
+.save-btn, .change-btn {
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+}
+
+.save-btn {
+  margin-left: auto;
+}

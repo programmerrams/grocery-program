@@ -1,0 +1,71 @@
+/*########################################################
+  general settings
+##########################################################*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+}
+
+.title {
+  text-align: center;
+  font-size: 5rem;
+}
+
+/*########################################################
+  navigation settings
+##########################################################*/
+
+/**************************************************************
+navigation section
+***************************************************************/
+a {
+  padding: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-state {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.last-link {
+  margin-left: auto;
+}
+
+/*########################################################
+  btn-section
+##########################################################*/
+
+.btn-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link-state {
+  margin: 2rem;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.link-state {
+  color: black;
+}
+
+.link-state:hover,
+.link-state:active {
+  color: green;
+  background-color: rgb(255, 33, 255);
+  scale: 1.3;
+}

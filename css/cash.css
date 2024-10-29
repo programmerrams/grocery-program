@@ -1,0 +1,181 @@
+/**************************************************************
+general settings
+***************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 2rem 4rem;
+}
+
+body {
+  background-color: greenyellow;
+}
+
+label {
+  font-size: 2rem;
+}
+
+/**************************************************************
+navigation section
+***************************************************************/
+a {
+  padding: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.link-state {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.last-link {
+  margin-left: auto;
+}
+
+/***************************************************
+clock section
+*****************************************************/
+.side-display {
+  display: flex;
+}
+
+.current-time {
+  font-size: 2rem;
+  align-content: center;
+}
+
+.clock-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/***************************************************
+first section
+*****************************************************/
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.scale-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field-box{
+  margin-top: 2rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-control {
+  margin-top: auto;
+}
+
+.input-field::placeholder {
+  font-size: 1.0rem;
+}
+
+.input-field {
+  height: 3rem;
+  width: 100%;
+  font-size: 2rem;
+}
+
+/***************************************************
+second section
+*****************************************************/
+
+.item-list {
+  height: 25%;
+  /* border: black 2px solid; */
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-rows: repeat(2, 1fr);
+}
+
+select {
+  height: 3rem;
+  width: 100%
+}
+
+.flex-set {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-row {
+  display: grid;
+}
+
+.section-two-title {
+  text-align: center;
+}
+
+table {
+  border: 2px solid black;
+  height: 800px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.grocery-list, .grocery-list-clone {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+.x-button {
+  fill: red;
+  height: 3rem;
+  width: 3rem;
+}
+
+svg {
+  border-radius: 50%;
+}
+
+
+/***************************************************
+third section
+*****************************************************/
+
+.price-section {
+  margin-top: 2rem;
+  border-top: 5px solid black;
+  margin: 0;
+}
+
+.number {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/***************************************************
+more and delete section
+*****************************************************/
+
+.button-section {
+  display: flex;
+}
+
+.more-button,
+.delete-button,
+.submit-button {
+  padding: 20px 40px;
+  margin: 0 10%;
+  border-radius:15px;
+}

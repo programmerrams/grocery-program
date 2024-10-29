@@ -1,0 +1,61 @@
+/**************************************************************
+general settings 
+***************************************************************/
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-color: skyblue;
+}
+
+
+
+
+/**************************************************************
+navigation section
+***************************************************************/
+
+a {
+  padding:20px;
+}
+
+.navigation-section {
+  margin: 1rem 2rem;
+}
+ 
+
+.nav-list {
+  list-style:none;
+  display: flex;
+}
+
+.link-state {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.last-button{ 
+  margin-left: auto;
+}
+
+
+
+/**************************************************************
+welcome section
+***************************************************************/
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.welcome-statement {
+  font-size: 5rem;
+}
