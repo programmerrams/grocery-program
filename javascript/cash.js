@@ -93,12 +93,16 @@ moreButton.addEventListener("click", function () {
 
 let selectedOption = document.querySelectorAll(".categories");
 
-selectedOption.addEventListener("change", priceIdentifier);
+selectedOption.forEach((option) => {
+  option.addEventListener("change", priceIdentifier);
+});
 
 // allows prices to change
 function priceIdentifier() {
-  let priceValue = document.querySelector(".input-field.price");
-  priceValue.value = selectedOption.value;
+  let priceValue = document.querySelectorAll(".input-field.price");
+  priceValue.forEach((price, option) => {
+    price.value = selectedOption[option].value;
+  });
 }
 
 // allows the submit button to work
