@@ -32,6 +32,7 @@ let TotalPriceTag = document.querySelector(".total-value");
 
 // allows us to javascript to recognize the node of "grocery-list"
 const node = document.querySelector(".grocery-list");
+const nodeMultiple = document.querySelectorAll(".grocery-list");
 
 let quantityValue = document.querySelector(".input-field.quantity").value;
 let quantityBox = document.querySelector(".input-field.number");
@@ -111,49 +112,55 @@ function calculatePrice() {
   //########################
   // recording values
   //########################
+  nodeMultiple.forEach((row) => {
 
-  // weight value
-  let weightValue = document.querySelector(".input-field.weight").value;
+    console.log(row);
+    // weight value
+    let weightValue = document.querySelector(".input-field.weight").value;
 
-  // quantity value
-  let quantityValue = document.querySelector(".input-field.quantity").value;
+    // quantity value
+    let quantityValue = document.querySelector(".input-field.quantity").value;
 
-  let priceValue = document.querySelector(".input-field.price").value;
+    let priceValue = document.querySelector(".input-field.price").value;
 
-  let salesTax = 0.0,
-    totalPrice = 0;
+    let salesTax = 0.0,
+      totalPrice = 0;
 
-  // converting strings to numbers
-  let weightValueNum = Number(weightValue);
-  let quantityValueNum = Number(quantityValue);
-  let priceValueNum = Number(priceValue);
-  let salesTaxNum = Number(salesTax);
-  let grossPrice;
-  let grossPriceNum = Number(grossPrice);
-  let TotalPriceNum = Number(totalPrice);
-  // if no quantity is entered.
-  if (quantityValueNum == 0) {
-    quantityValueNum = 1;
-    grossPrice = priceValueNum * quantityValueNum * weightValueNum;
-  } else {
-    weightValueNum = 1;
-    // quantityValueNum = 1;
-    grossPrice = parseFloat(priceValueNum * quantityValueNum * weightValueNum);
-  }
+    // converting strings to numbers
+    let weightValueNum = Number(weightValue);
+    let quantityValueNum = Number(quantityValue);
+    let priceValueNum = Number(priceValue);
+    let salesTaxNum = Number(salesTax);
+    let grossPrice;
+    let grossPriceNum = Number(grossPrice);
+    let TotalPriceNum = Number(totalPrice);
+    // if no quantity is entered.
+    if (quantityValueNum == 0) {
+      quantityValueNum = 1;
+      grossPrice = priceValueNum * quantityValueNum * weightValueNum;
+    } else {
+      weightValueNum = 1;
+      // quantityValueNum = 1;
+      
+      grossPrice = parseFloat(
+        priceValueNum * quantityValueNum * weightValueNum
+      );
+    }
 
-  totalPrice = grossPrice + salesTax;
-  console.log(weightValue);
-  console.log(quantityValue);
-  console.log(priceValue);
-  console.log(grossPrice);
+    totalPrice = grossPrice + salesTax;
+    console.log(weightValue);
+    console.log(quantityValue);
+    console.log(priceValue);
+    console.log(grossPrice);
 
-  // displaying results to customer
+    // displaying results to customer
 
-  grossPriceTag.textContent = `$ ${grossPrice.toFixed(2)}`;
-  TaxPriceTag.textContent = `$ ${salesTax}`;
-  TotalPriceTag.textContent = `$ ${totalPrice.toFixed(2)}`;
+    grossPriceTag.textContent = `$ ${grossPrice.toFixed(2)}`;
+    TaxPriceTag.textContent = `$ ${salesTax}`;
+    TotalPriceTag.textContent = `$ ${totalPrice.toFixed(2)}`;
 
-  // location.replace("transactionResults.html");
+    // location.replace("transactionResults.html");
+  });
 }
 
 submitButton.addEventListener("click", calculatePrice);
